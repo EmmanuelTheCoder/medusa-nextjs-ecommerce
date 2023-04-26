@@ -85,21 +85,144 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
+.change-display{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (min-width: 690px){
+  .products{
+    box-shadow: .5px 1px 2px 1.5px  grey;
+    width: 15rem !important;
+    transition: 1s all ease;
+   
+}
+.image-container img{
+    width: 13rem !important; 
+}
+}
+
+.sub-cart-list-header{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.cart-product-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.cart-product-img {
+  width: 5rem;
+  height: 4rem;
+}
+.sub-cart-list-header h1{
+  font-size: 1.2rem;
+}
+.fa-del{
+  width: 20px;
+  height: 20px;
+  margin-top: .2rem;
+  cursor: pointer;
+}
+.control-btn{
+  display: flex;
+  justify-content: center;
+}
+.control-btn strong{
+  border: 1px solid black;
+  height: fit-content;
+  margin: 0 .1rem;
+  padding: 0 .1rem;
+  cursor: pointer;
+  background-color: rgb(160, 158, 158);
+  outline: none;
+
+}
+
+.control-btn strong:hover{
+  background: rgb(43, 39, 39);
+  color: #fff
+}
+
+
+
+.cart-total-amount{
+  font-size: 1.5rem;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.cart-flex{
+  height: 100vh;
+  background-color: #e3e1e110;
+}
+.cart-flex  h1 {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 1.5rem;
+}
+
+.cart-header{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5rem;
+}
+.cart-flex img {
+  width: 5rem;
+  height: 2rem;
+}
+.cart-div{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: .7rem;
+}
+
+.return{
+  margin-top: 7rem;
+  margin-left: 1rem;
+}
+
+sup{
+  border: 1px solid rgb(60, 30, 62);
+  border-radius: 50px;
+  background:rgba(68, 8, 83, 0.3);
+  padding: .2rem;
+}
+
+.modal {
+  width: 30rem;
+  height: 5rem;
+  background-color: rgb(236, 230, 230);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 8rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  
+}
+.modal-text{
+  text-align: center;
+  padding-top: 1rem;
+}
+.modal-text button {
+  outline: none;
+  width: 5rem;
+  padding-top: .3rem;
+  background-color: rgb(79, 30, 67);
+  color: white;
+  border: .5px solid brown;
+  cursor: pointer;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
